@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 * {
     padding: 0;
@@ -11,7 +11,7 @@
 }
 
 :root {
-    --main-color: 	rgba(226, 230, 21, 0.934);
+    --main-color: rgb(167, 190, 16);
     --text-color: #fff;
     --bg-color: #1e1c2a;
     --big-font: 4rem;
@@ -65,7 +65,7 @@ header {
     transition: .4s;
 }
 
-.menu-1 {
+#menu-icon {
     font-size: 2rem;
     cursor: pointer;
     display: none;
@@ -85,14 +85,14 @@ section {
 }
 
 .home-img img {
-    float:right;
     max-width: 100%;
     width: 600px;
     height: auto;
 }
 
 .home-text h1 {
-    font-size: 20px;
+    text-align: left;
+    font-size: var(--big-font);
     color: var(--main-color);
 }
 
@@ -202,6 +202,15 @@ section {
     font-weight: 600;
 }
 
+.box .bx{
+    background:var(--main-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
 #cart {
     background: var(--main-color);
     position: absolute;
@@ -316,7 +325,7 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    border-radius: 20px;
+    border-radius: 50%;
     transition: .4s;
 }
 
@@ -326,7 +335,7 @@ section {
     background: var(--text-color);
 }
 
-@media (max-width: 1073px) {
+@media (max-width: 1560px) {
     header {
         padding: 15px 40px;
     }
@@ -337,14 +346,8 @@ section {
     }
 }
 
-@media (max-width: 810px) {
-    .col {
-        width: 30%;
-        margin-bottom: 10px;
-    }
-}
 
-@media (max-width: 703px) {
+@media (max-width: 1140px) {
     section {
         padding: 50px 8%;
     }
@@ -381,7 +384,7 @@ section {
     }
 }
 
-@media (max-width: 553px) {
+@media (max-width: 720px) {
     header {
         padding: 10px 16px;
     }
@@ -404,6 +407,12 @@ section {
         padding: 100px 7%;
     }
 
+    .col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
     .col {
         width: 100%;
     }
